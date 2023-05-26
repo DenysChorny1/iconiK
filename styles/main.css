@@ -301,12 +301,12 @@
 .services_tabcontent_card {
   margin: 0 10px;
   height: 460px;
-  max-width: 360px;
+  max-width: 270px;
   width: 100%;
 }
 @media (min-width: 768px) {
   .services_tabcontent_card {
-    max-width: 290px;
+    max-width: 360px;
   }
 }
 .services_tabcontent_card_img {
