@@ -111,6 +111,9 @@
             height: 460px;
             max-width: 360px;
             width: 100%;
+            @media (min-width: #{$screen-md-min}) {
+                max-width: 290px;
+            }
             &_img{
                 position: relative;
                 img{

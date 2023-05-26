@@ -93,7 +93,7 @@
   }
 }
 .buner_section .header_menu-mobile .header_menu-line {
-  padding: 20px;
+  padding: 0 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   margin: 0;
 }
@@ -304,6 +304,11 @@
   max-width: 360px;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .services_tabcontent_card {
+    max-width: 290px;
+  }
+}
 .services_tabcontent_card_img {
   position: relative;
 }
@@ -396,6 +401,8 @@
 }
 .part_of_iconik .slick-dots li::marker {
   content: "";
+  font-size: 0;
+  line-height: 0;
 }
 .part_of_iconik .slick-dots li::-webkit-details-marker {   display:none; }
 .part_of_iconik .slick-dots .slick-active button {

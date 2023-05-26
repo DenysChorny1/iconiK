@@ -33,6 +33,8 @@
         padding: 0;
         li::marker{
             content: '';
+            font-size: 0;
+            line-height: 0;
         }
         .slick-active button{
             width: 24px;
