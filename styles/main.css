@@ -102,6 +102,10 @@
 }
 .buner_section .header_menu-mobile .dropdown a {
   text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 20px;
 }
 .buner_section .header_menu-mobile .dropdown-menu {
   position: absolute;
@@ -393,6 +397,7 @@
 .part_of_iconik .slick-dots li::marker {
   content: "";
 }
+.part_of_iconik .slick-dots li::-webkit-details-marker {   display:none; }
 .part_of_iconik .slick-dots .slick-active button {
   width: 24px;
   border-radius: 0;
