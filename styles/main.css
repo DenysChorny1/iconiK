@@ -82,6 +82,7 @@
 }
 .buner_section .header_content_navigation_consultation-button:hover {
   color: #FFFFFF;
+  background-color: #615D6D;
 }
 .buner_section .header_content_language {
   padding: 24px;
@@ -680,6 +681,10 @@
   color: #FFFFFF;
   outline: none;
 }
+.consultation_content .consultation-form_input input::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 16px;
+}
 .consultation_content .consultation-form_input input::placeholder {
   color: #FFFFFF;
   font-size: 16px;
@@ -1002,6 +1007,8 @@ main {
   padding: 0 15px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 @media (min-width: 992px) {
   .logo {
@@ -1020,6 +1027,4 @@ main {
 }
 .logo .logo-text {
   font-weight: 12px;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
