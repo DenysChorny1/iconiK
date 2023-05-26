@@ -1,6 +1,14 @@
 {
+  "homepage": "https://denyschorny1.github.io/iconiK/",
   "dependencies": {
     "@splidejs/splide": "^4.1.4",
     "jquery": "^3.7.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
