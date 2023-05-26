@@ -1,0 +1,72 @@
+.consultation{ 
+    padding-bottom: 50px;
+    @media (min-width: #{$screen-lg-min}) {
+        padding-bottom: 100px;
+    }
+    &_content{
+        background-color: $purple-accent;
+        margin: 0 15px;
+        padding: 40px 30px;
+        color: $just-white;
+        @media (min-width: #{$screen-lg-min}){
+            padding: 90px 70px 80px;
+        }
+        .consultation-form{
+            padding: 15px 0 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media (min-width: #{$screen-lg-min}){
+                padding: 30px 0;
+            }
+            &_input{
+                border-bottom: 1px solid $just-white;
+                max-width: 320px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                padding: 5px 5px 15px 0;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    color: $just-white;
+                    outline: none;
+                    &::placeholder{
+                        color: $just-white;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .consultation-submit{
+        display: flex;
+        align-items: center;
+        &_button{
+            background-color: $main-background;
+            color: $just-white;
+            padding: 24px 48px;
+            border: none;
+            font-size: 16px;
+            margin: 0 auto;
+            :hover{
+                background-color: $lighter-gray;
+            }
+            @media (min-width: #{$screen-lg-min}) {
+                padding: 18px 48px;
+                margin: 1px;
+            }
+        }
+        &_button:hover{
+            background-color: $lighter-gray;
+        }
+        span{
+            display: none;
+            @media (min-width: #{$screen-lg-min}) {
+                display: block;
+                margin-left: 20px;
+            }
+        }
+    }
+}

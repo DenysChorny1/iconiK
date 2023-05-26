@@ -1,0 +1,145 @@
+@import './common/variables.scss';
+@import './components/buner_section.scss';
+@import './components/services.scss';
+@import './components/part_of_iconik.scss';
+@import './components/iconik_membership.scss';
+@import './components/iconik_lifestyle.scss';
+@import './components/iconik_managers.scss';
+@import './components/consultation.scss';
+@import './components/footer.scss';
+
+h1{
+    text-transform: uppercase;
+    font-family: 'Al Veshion';
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 60px;
+        line-height: 80px;
+    }
+}
+h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Al Veshion';
+    font-weight: 400;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 48px;
+        line-height: 64px;
+    }
+}
+h3{
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+h4{
+    text-transform: uppercase;
+    font-family: 'Al Veshion';
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+h5{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+h6{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+div{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+p{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+span{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 15px;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
+a{
+    font-size: 12px;
+    line-height: 16px;
+    @media (min-width: #{$screen-lg-min}) {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+body{
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+.block{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    background-color: $main-background;
+}
+.logo{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $just-white;
+    @media (min-width: #{$screen-lg-min}) {
+        padding: 0;
+    }
+    svg{
+        width: 75px;
+        height: 20px;
+        @media (min-width: #{$screen-lg-min}) {
+            width: 120px;
+            height: 34px;
+        }
+    }
+    .logo-text{
+        font-weight: 12px;
+    }
+}

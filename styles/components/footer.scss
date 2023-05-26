@@ -1,0 +1,116 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @media (min-width: #{$screen-md-min}){
+        flex-direction: row;
+    }
+    .footer-info{
+        width: 100%;
+        float: right;
+        background-color: $footer-background;
+        @media (min-width: #{$screen-md-min}){
+            width: 50%;
+        }
+        &_content{
+            float: right;
+            max-width: 560px;
+            width: 100%;
+            padding: 50px 0 30px;
+            color: $just-white;
+            @media (min-width: #{$screen-xl-min}){
+                padding: 120px 0 150px;
+            }
+            @media (min-width: #{$screen-sm-min}){
+                padding: 70px 0 100px;
+            }
+            .logo{
+                margin-bottom: 30px;
+            }
+            &_links{
+                float: left;
+                display: flex;
+                flex-flow: column;
+                margin-left: 15px;
+                @media (min-width: #{$screen-sm-min}){
+                    margin-left: 0;
+                }
+                a{
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                    color: $just-white;
+                }
+            }
+            &_contacts{
+                float: left;
+                margin-left: 30px;
+                @media (min-width: #{$screen-xl-min}){
+                    margin-left: 180px;
+                }
+                @media (min-width: #{$screen-sm-min}){
+                    margin-left: 120px;
+                }
+                span{
+                    text-transform: uppercase;
+                    color: $lighter-gray;
+                    margin-bottom: 8px;
+                }
+                p{
+                    margin: 0 0 20px;
+                }
+                button{
+                    max-width: 100px;
+                    width: 100%;
+                    background-color: $purple-accent;
+                    color: $just-white;
+                    border: none;
+                    padding: 16px;
+                    
+                }
+                button:hover{
+                    background-color: $lighter-gray;
+                }
+            }
+        }
+        
+    }
+    
+    .footer-map{
+        width: 100%;
+        iframe{
+            width: 100%;
+            height: 225px;
+            @media (min-width: #{$screen-md-min}){
+                height: 100%;
+            }
+        }
+        @media (min-width: #{$screen-md-min}){
+            width: 50%;
+        }
+    }
+}
+.footer-privacy{
+    background-color: $main-background;
+    .block{
+        display: flex;
+        justify-content: center;
+        padding: 29px 0;
+        color: $lighter-gray;
+        p{
+            margin: 0;
+        }
+        .footer-privacy-hiden{
+            display: none;
+        }
+        @media (min-width: #{$screen-md-min}){
+            .footer-privacy-hiden{
+                display: block;
+            }
+        }
+    }
+    @media (min-width: #{$screen-md-min}){
+        .block{
+            justify-content: space-between;
+        }
+    }
+}

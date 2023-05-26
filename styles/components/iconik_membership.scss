@@ -1,0 +1,98 @@
+.iconik_membership{
+    padding: 50px 7px;
+    background-color: $footer-background;
+    text-align: center;
+    @media (min-width: #{$screen-xl-min}) {
+        padding: 160px 10px;
+        background-image: url('../images/plans-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    h2{
+        color: $just-white;
+        padding-bottom: 30px;
+    }
+    &_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_block{
+            max-width: 455px;
+            margin: 0 7px 10px;
+            width: 100%;
+            background-color: $main-background;
+            color: $just-white;
+            img{
+                display: none;
+                @media (min-width: #{$screen-xl-min}) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .text{
+                padding: 30px 20px 90px;
+                text-align: left;
+                position: relative;
+                @media (min-width: #{$screen-xl-min}) {
+                    padding: 50px 40px 40px;
+                }
+                h4{
+                    text-align: center;
+                }
+                .text-row{
+                    padding-top: 30px;
+                    display: flex;
+                    svg{
+                        margin-right: 13px;
+                    }
+                }
+                .text-grey{
+                    color: $lighter-gray;
+                }
+                .text-hiden{
+                    display: none;
+                    @media (min-width: #{$screen-md-min}) {
+                        display: block;
+                    }
+                }
+                .text-hiden-button{
+                   width: 100%;
+                   text-align: center;
+                   color: $lighter-gray;
+                   border: 1px solid $lighter-gray;
+                   padding: 18px 0;
+                   background-color: transparent;
+                   position: absolute;
+                   bottom: 0;
+                   left: 0;
+                   text-transform: uppercase;
+                   @media (min-width: #{$screen-md-min}) {
+                      display: none;
+                   }
+                }
+                .text-hiden-mobile:hover .text-hiden{
+                    display: block;
+                }
+                .text-hiden-mobile:hover .text-hiden-button{
+                    display: none;
+                }
+            }
+            &_button{
+                width: 100%;
+                text-decoration: none;
+                background-color: $purple-accent;
+                color: $just-white;
+                padding: 21px 0;
+                display: block;
+            }
+            &_button:hover{
+                background-color: $lighter-gray;
+            }
+        }
+    }
+    .white{
+        background-color: $just-white;
+        color: $main-background;
+    }
+}

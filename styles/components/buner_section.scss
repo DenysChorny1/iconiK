@@ -1,0 +1,167 @@
+.buner_section{
+    background-image: url('../images/Header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    .voice-icon{
+        display: none;
+        position: absolute;
+        bottom: 60px;
+        right: 40px;
+        @media (min-width: #{$screen-lg-min}) {
+            display: block;
+        }
+    }
+    &_gradient{
+        background-color: rgba(27, 27, 27, 0.4);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+    }
+    .header{
+        background: linear-gradient(180deg, rgba(27, 27, 27, 0.5) 0%, rgba(27, 27, 27, 0) 50.09%);
+        display: flex;
+        color: $just-white;
+        margin-bottom: 50px;
+        position: relative;
+        @media (min-width: #{$screen-lg-min}) {
+            margin-bottom: 100px;
+            height: 100px;
+        }
+        .block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_content{
+            display: none;
+            align-items: center;
+            height: 100%;
+            @media (min-width: #{$screen-lg-min}) {
+                display: flex;
+            }
+            &_navigation{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                border-right: 1px solid rgba(255, 255, 255, 0.1);
+                &_link{
+                    margin-right: 40px;
+                    text-decoration: none;
+                    color: $just-white;
+                    text-transform: uppercase;  
+                }
+                :hover{
+                    color: $purple-accent;
+                }
+                .active{
+                    color: $purple-accent;
+                }
+                &_consultation-button{
+                    margin: 0 30px 0 20px;
+                    text-decoration: none;
+                    padding: 17px 26px;
+                    outline: none;
+                    border-radius: 2px;
+                    color: $just-white;
+                    font-size: 13px;
+                    background-color: $purple-accent;
+                }
+                &_consultation-button:hover{
+                    color: $just-white;
+                    background-color: $lighter-gray;
+                }
+            }
+            &_language{
+                padding: 24px;
+                
+            }
+        }
+        &_menu-mobile{
+            @media (min-width: #{$screen-lg-min}) {
+                display: none;
+            }
+            .header_menu-line{
+                padding: 20px;
+                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                margin: 0;
+            }
+            .dropdown {
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                }
+              }
+              .dropdown-menu {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #f1f1f1;
+                width: 80%;
+                padding: 20px;
+                display: none;
+                list-style-type: none;
+              }
+              
+              .dropdown:hover .dropdown-menu {
+                display: block;
+              }
+              .icon {
+                font-size: 24px;
+              }
+        }
+    }
+    .header::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        @media (min-width: #{$screen-lg-min}) {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            right: 20px;
+            height: 1px;
+            width: auto;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+    .bunner{
+        padding: 0 15px;
+        color: $just-white;
+        @media (min-width: #{$screen-lg-min}) {
+            padding: 0;
+        }
+        h1{
+            width: 230px;
+            @media (min-width: #{$screen-lg-min}) {
+                width: auto;
+            }
+        }
+        &_play-button{
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            @media (min-width: #{$screen-lg-min}) {
+                margin-top: 40px;
+            }
+            h5{
+                margin-left: 24px;
+            }
+            svg{
+                width: 50px;
+                height: 50px;
+                @media (min-width: #{$screen-lg-min}) {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.services{
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    @media (min-width: #{$screen-lg-min}) {
+        padding: 180px 0;
+    }
+    h2{
+        color: $just-white;
+        padding-bottom: 40px;
+    }
+    &_tab{
+        display: none;
+        @media (min-width: #{$screen-md-min}) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+            &_tablinks{
+                width: 157px;
+                height: 58px;
+                background-color: transparent;
+                padding: 19px 28px;
+                border: 1px solid $lighter-gray;
+                color: $lighter-gray;
+                margin: 0;
+                text-transform: uppercase;
+            }
+            :hover{
+                color: $just-white;
+            }
+            .active{
+                border-color: $just-white;
+                color: $just-white;
+            }
+        }
+    }
+    &_mobile{
+        display: block;
+        margin: 0 auto 30px;
+        width: 100%;
+        max-width: 290px;
+        background-color: transparent;
+        border: 1px solid $lighter-gray;
+        color: $just-white;
+        padding: 15px 20px;
+        @media (min-width: #{$screen-md-min}) {
+            display: none;
+        }
+        .select-option{
+            background-color: $main-background;
+            color: $just-white;
+        }
+    }
+    &_tabcontent {
+        position: relative;
+        .slider-services{
+            overflow: hidden;
+        }
+        .prev{
+            display: none;
+            @media (min-width: #{$screen-xl-min}) {
+                left: 0;
+            }
+        }
+        .next{
+            display: none;
+            @media (min-width: #{$screen-xl-min}) {
+                right: 0;
+            }
+        }
+        .slick-arrow{
+            svg{
+                .first{
+                    fill: white;
+                }
+                .second{
+                    stroke: black;
+                }
+                .third{
+                    stroke: black;
+                }
+            }
+        }
+        .slick-arrow.slick-disabled{
+            svg{
+                .first{
+                    fill: transparent;
+                }
+                .second{
+                    stroke: white;
+                }
+                .third{
+                    stroke: white;
+                }
+            }
+        }
+        .slick-arrow{
+            display: block;
+            position: absolute;
+            top: 32%;
+        }
+        .tab-card.slick-slide{
+            height: auto;
+            width: 260px;
+            @media (min-width: #{$screen-md-min}) {
+                width: 360px;
+            }
+        }
+        &_card{
+            margin: 0 10px;
+            height: 460px;
+            max-width: 360px;
+            width: 100%;
+            &_img{
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .tab-link{
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    left: 0;
+                    color: $just-white;
+                    text-decoration: none;
+                    background-color: $purple-accent;
+                    text-align: center;
+                    padding: 21px 0;
+                }
+                
+            }
+            &_img:hover .tab-link{
+                display: block;
+            }
+            &_img:hover img{
+                opacity: 0.7;
+            }
+            &_content{
+                text-align: left;
+                padding: 10px 0;
+                color: $just-white;
+                @media (min-width: #{$screen-md-min}) {
+                    padding: 24px 30px 0;
+                }
+                &_title{
+                    text-transform: uppercase;
+                }
+                &_bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    .content-bottom-price{
+                        display: flex;
+                        .old-price{
+                            color: $lighter-gray;
+                            text-decoration: line-through;
+                            padding-left: 10px;
+                        }
+                    }
+                    .content-bottom-hour{
+                        color: $lighter-gray;
+                    }
+                }
+            }
+        }
+    }
+}
